@@ -1,7 +1,12 @@
 ---
 title: "RENOVATE-COMPLEX-PCI"
 author: "Suhyeon Kwon"
-format: revealjs
+format: 
+  revealjs:
+    footer: "FFR vs IVUS"
+    scrollable: true
+    transition: slide
+    slide-number: true
 editor: visual
 ---
 
