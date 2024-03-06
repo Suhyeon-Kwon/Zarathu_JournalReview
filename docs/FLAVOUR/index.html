@@ -336,26 +336,68 @@ Suhyeon Kwon
 </div>
 
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li><p>관상동맥 질환(CAD)을 진단하고, 경피적 관상동맥 중재술(PCI) 여부를 결정하기 위해 관상동맥조영술(coronary angiography)을 이용하나, 추가 정보를 얻기 위해 IVUS와 FFR을 이용하기도 함</p></li>
+<li><p>그러나 임상 결과와 관련하여 IVUS와 FFR의 차이에 관한 데이터가 부족함. 따라서 이 논문에서는 <strong>IVUS와 FFR의 임상 결과를 비교</strong>하고자 함</p></li>
+<li><p>초기 목표는 FFR이 IVUS보다 우수하다는 것을 증명하는 것이었음. 그러나 약물 방출 스텐트 사용시 IVUS의 임상 결과를 개선할 수 있다는 연구 결과로 인해, IVUS에 대한 FFR의 비열등성(Noninferiority)을 평가하는 것으로 목표를 수정함</p></li>
+<li><p>FFR이 더 적은 스텐트 배치와 더 적은 의료 자원의 소비로 이어질 것으로 예상된다는 점을 고려할 때, FFR의 비열등성을 증명하는 본 연구는 정당화될 수 있음</p></li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+
+<section>
+<section id="methods" class="title-slide slide level1 center">
+<h1>Methods</h1>
+
+</section>
+<section id="population-and-randomization" class="slide level2">
+<h2>Population and Randomization</h2>
+<ul>
+<li><p>한국과 중국의 18개 기관에서 수행됨</p></li>
+<li><p>허혈성 심장질환이 의심되고, 중간 협착증을 가지고 있는 19세 이상의 환자들을 대상으로 함</p></li>
+<li><p>noncardiac coexisting illness을 가지고 있거나, 기대 여명이 2년 이하인 경우 제외함</p></li>
+<li><p>실험에 참여한 환자들은 1:1 비율로 FFR 그룹과 IVUS 그룹에 무작위 배정됨</p></li>
+<li><p>실험 기관과 당뇨병 유무에 따라 층화 추출함</p></li>
+</ul>
+</section>
+<section id="outcomes-and-definitions" class="slide level2">
+<h2>Outcomes and Definitions</h2>
+<ul>
+<li><p>primary outcome: 사망, 심근경색, 연구 기간 동안 혈관재형성(revascularization)</p></li>
+<li><p>key secondary outcome: 환자별, 혈관별로 배치된 스텐트 개수, 뇌졸중 등</p></li>
+</ul>
+</section>
+<section id="sample-size" class="slide level2">
+<h2>Sample size</h2>
+<ul>
+<li><p>가정: 24개월 내 primary outcome의 발생률이 FFR 그룹에서 10%, IVUS 그룹에서 12%이다.</p></li>
+<li><p>귀무가설(H0): FFR 그룹과 IVUS 그룹의 primary outcome 발생률이 2.5%(noninferiority margin)보다 차이난다. = FFR 그룹이 IVUS 그룹에 대해 열등하다.</p></li>
+<li><p>sample size: 1700</p></li>
+<li><p>검정력(power): 0.9 (90%)</p></li>
+<li><p>type 1 error rate: 0.05 (5%)</p></li>
+<li><p>단측검정 + 95% 신뢰구간 이용</p></li>
+</ul>
+</section>
+<section id="statistical-analysis" class="slide level2">
+<h2>Statistical analysis</h2>
+<ol type="1">
+<li>Cox proportional-hazards model: 실험 장소와 당뇨병 유무에 따라 primary outcome 발생률 분석
+<ul>
+<li>proportional-hazards model의 가정은 scaled된 Schoenfeld residuals 양측 검정으로 평가</li>
+</ul></li>
+<li>Kaplan-Meier: 첫 사건이 발생하기까지의 시간 분석</li>
+<li>모든 결과는 intention-to-treat&amp;per-protocol / per-patient&amp;per-vessel에 따라 분석</li>
+<li>결측치나 부적절한 데이터는 제거</li>
+</ol>
+</section></section>
+<section id="results" class="title-slide slide level1 center">
+<h1>Results</h1>
+
+</section>
+
+<section id="discussion" class="title-slide slide level1 center">
+<h1>Discussion</h1>
 <div class="footer footer-default">
 
 </div>
@@ -571,44 +613,6 @@ Suhyeon Kwon
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
