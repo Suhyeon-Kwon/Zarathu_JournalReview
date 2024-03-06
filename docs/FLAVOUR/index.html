@@ -243,6 +243,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -336,7 +337,7 @@ Suhyeon Kwon
 </div>
 
 </section>
-<section id="overview" class="title-slide slide level1 smaller center">
+<section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 <ul>
 <li><p>관상동맥 질환(CAD)을 진단하고, 경피적 관상동맥 중재술(PCI) 여부를 결정하기 위해 관상동맥조영술(coronary angiography)을 이용하나, 추가 정보를 얻기 위해 IVUS와 FFR을 이용하기도 함</p></li>
@@ -351,7 +352,7 @@ Suhyeon Kwon
 <h1>Methods</h1>
 
 </section>
-<section id="population-and-randomization" class="slide level2 smaller">
+<section id="population-and-randomization" class="slide level2">
 <h2>Population and Randomization</h2>
 <ul>
 <li><p>한국과 중국의 18개 기관에서 수행됨</p></li>
@@ -361,14 +362,14 @@ Suhyeon Kwon
 <li><p>실험 기관과 당뇨병 유무에 따라 층화 추출함</p></li>
 </ul>
 </section>
-<section id="outcomes-and-definitions" class="slide level2 smaller">
+<section id="outcomes-and-definitions" class="slide level2">
 <h2>Outcomes and Definitions</h2>
 <ul>
 <li><p>primary outcome: 사망, 심근경색, 연구 기간 동안 혈관재형성(revascularization)</p></li>
 <li><p>key secondary outcome: 환자별, 혈관별로 배치된 스텐트 개수, 뇌졸중 등</p></li>
 </ul>
 </section>
-<section id="sample-size" class="slide level2 smaller">
+<section id="sample-size" class="slide level2">
 <h2>Sample size</h2>
 <ul>
 <li><p>가정: 24개월 내 primary outcome의 발생률이 FFR 그룹에서 10%, IVUS 그룹에서 12%이다.</p></li>
@@ -380,7 +381,7 @@ Suhyeon Kwon
 <li><p><strong>수식첨부</strong></p></li>
 </ul>
 </section>
-<section id="statistical-analysis" class="slide level2 smaller">
+<section id="statistical-analysis" class="slide level2">
 <h2>Statistical analysis</h2>
 <ol type="1">
 <li>Cox proportional-hazards model: 실험 장소와 당뇨병 유무에 따라 primary outcome 발생률 분석
@@ -397,7 +398,7 @@ Suhyeon Kwon
 <h1>Results</h1>
 
 </section>
-<section id="patients-and-follow-up" class="slide level2 smaller">
+<section id="patients-and-follow-up" class="slide level2">
 <h2>Patients and follow-up</h2>
 <ul>
 <li><p>총 1682명의 환자를 FFR 그룹(838명)과 IVUS 그룹(844명)으로 무작위 배정함</p></li>
@@ -418,7 +419,7 @@ Suhyeon Kwon
 
 -   5명: 약물 방출 스텐트를 사용하지 않고 PCI 수행</code></pre>
 </section>
-<section id="primary-outcome" class="slide level2 smaller">
+<section id="primary-outcome" class="slide level2">
 <h2>Primary outcome</h2>
 <ul>
 <li><p>99.2%의 환자들에 대해 추적 관찰 완료, 14명 실패</p></li>
@@ -437,7 +438,7 @@ Suhyeon Kwon
 </ul></li>
 </ul>
 </section>
-<section id="secondary-and-other-outcomes" class="slide level2 smaller">
+<section id="secondary-and-other-outcomes" class="slide level2">
 <h2>Secondary and other outcomes</h2>
 <ul>
 <li><p>secondary outcomes의 발생은 두 그룹에서 유사하며, 당뇨병 유무와 intention-to-treat&amp;per-protocol 분석에서도 유사함</p></li>
@@ -449,7 +450,7 @@ Suhyeon Kwon
 <h1>Discussion</h1>
 
 </section>
-<section id="conclusion" class="slide level2 smaller">
+<section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
 <ul>
 <li><p>primary outcome 측면에서 FFR이 IVUS에 대해 비열등함</p>
@@ -458,7 +459,7 @@ Suhyeon Kwon
 </ul></li>
 </ul>
 </section>
-<section id="limits" class="slide level2 smaller">
+<section id="limits" class="slide level2">
 <h2>Limits</h2>
 <ul>
 <li><p>low-risk 환자를 대상으로 실험을 진행하여 high-risk 환자들에 적용이 어려움</p></li>
@@ -496,13 +497,13 @@ Suhyeon Kwon
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
+'smaller': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,

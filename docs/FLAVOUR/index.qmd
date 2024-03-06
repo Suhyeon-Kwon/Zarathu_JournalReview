@@ -123,13 +123,13 @@ editor: visual
 
 # Discussion
 
-## Conclusion 
+## Conclusion
 
 -   primary outcome 측면에서 FFR이 IVUS에 대해 비열등함
 
     -   IVUS 그룹보다 FFR 그룹에서 target-vessel PCI가 더 적게 수행되었고, 이는 더 적은 스텐트 배치와 더 적은 이중 항혈소판제 투여로 이어질 수 있음
 
-## Limits 
+## Limits
 
 -   low-risk 환자를 대상으로 실험을 진행하여 high-risk 환자들에 적용이 어려움
 
