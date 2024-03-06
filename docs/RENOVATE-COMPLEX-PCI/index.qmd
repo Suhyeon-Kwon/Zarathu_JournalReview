@@ -3,28 +3,92 @@ title: "RENOVATE-COMPLEX-PCI"
 author: "Suhyeon Kwon"
 format: 
   revealjs:
-    footer: "FFR vs IVUS"
+    footer: "RENOVATE-COMPLEX-PCI"
     scrollable: true
     transition: slide
     slide-number: true
 editor: visual
 ---
 
-## Quarto
+## Glossary
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+-   **coronary artery**: 관상동맥, 심장에 혈액을 공급하는 동맥
 
-## Bullets
+-   **percutaneous coronary intervention(PCI)**: 경피적 관상동맥 중재술, 막힌 관상동액의 협착 부위를 넓혀주는 시술
 
-When you click the **Render** button a document will be generated that includes:
+-   **coronary angiography**: 관상동맥 조영술, 관상동맥을 x선을 이용해서 촬영하는 진단 방법
 
--   Content authored with markdown
--   Output from executable code
+-   **intravascular ultrasonography(IVUS)**: 혈관 내 초음파 촬영
 
-## Code
+-   **optical coherence tomography(OCT)**: 광원을 이용하여 조직의 구조 단면 이미지를 제공하는 의료 영상 기술
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Overview
 
-```{r}
-1 + 1
-```
+-   복잡한 관상동맥 병변을 가진 환자들은 그렇지 않은 환자보다 PCI 시행시 더 안좋은 임상 결과를 보임
+
+-   하지만 PCI 시행 중 IVUS/OCT를 이용하는 것은 병변 특징에 대한 유용한 정보를 제공하고, 적절한 스텐트 사이즈나 착지점을 선정하고, 스텐트가 잘 펼쳐졌는지 등을 결정하는데 사용되어 복잡한 관상동맥 병변을 가진 환자의 임상 결과를 개선할 수 있음
+
+-   angiography-guided PCI보다 intravascular imaging-guided PCI의 임상 결과가 더 좋다는 연구가 존재하지만 표본 크기 제한 등의 문제로 추가 연구가 필요함
+
+-   따라서 IVUS/OCT를 이용한 intravascular imaging-guided PCI가 angiography-guided PCI보다 복잡한 관상동맥 병변 환자의 임상 결과를 개선하는지 조사하고자 본 연구를 시행함
+
+# Methods
+
+## Population and Randomization
+
+-   한국의 20개 기관에서 실시됨
+
+-   복잡한 관상동맥 병변으로 PCI를 받는 19세 이상의 환자들을 대상으로 함
+
+-   PCI 후보로 적합하지 않은 관상동맥 병변을 가진 환자, 특정 약물에 과민증이나 금기사항이 있는 환자, 임산부나 수유 중인 환자는 제외됨
+
+-   실험에 참여한 환자들은 intravascular imaging-guided PCI 그룹 또는 angiography-guided PCI 그룹에 2:1 비율로 무작위 배정됨
+
+-   안정형 허혈성 심장질환/급성 관상동맥 증후군 여부와 참여 기관에 따라 층화추출함
+
+## Trial end points
+
+-   primary end point: 사망, 표적 혈관 관련 심근경색, 표적 혈관 재혈관화 수술
+
+-   secondary end point: 스텐트 혈전증 등
+
+## Sample size
+
+-   가정: 연간 primary end point 발생률은 intravascular imaging-guided PCI 그룹에서 3.6%, angiography-guided PCI 그룹에서 6%이다.
+-   귀무가설(H0): 두 그룹에서 primary end point 발생률의 차이가 없다.
+-   sample size: 1620
+-   검정력(power): 0.9 (90%)
+-   two sided significant level: 0.05 (5%)
+-   log-rank test 이용함
+
+## Statistical analysis
+
+-   
+
+-   Cox proportional-hazards model -공변량 통제하에 시간&사건 관계 분석, hazard ratio 95% C.I
+
+-   Kaplan-Meier method - 관찰 시간에 따라 event가 발생한 시점의 사건 발생률을 계산
+
+-   Intention-to-treat(ITT, 치료의도)
+
+## Discussion
+
+::: panel-tabset
+### Conclusion
+
+-   추적 기간 동안 복잡한 관상동맥 병변에 대하여 intravascular imaging-guided PCI가 angiography-guided PCI보다 primary end point 발생률이 더 낮았음
+
+-   절차와 관련된 안전 사전의 발생률은 두 그룹에서 차이가 없었음
+
+-   이전 연구에서보다 더 큰 표본과 더 긴 추적기간을 가졌으며, 복잡한 관상동맥 병변을 가진 환자만을 대상으로 했다는 점에서 의의가 있음
+
+### Limits
+
+-   수술자가 환자에게 지정된 그룹을 알고 있음
+
+-   intravascular imaging으로 정의된 스텐트 최적화가 45.4%의 환자에게만 수행됨
+
+-   angiography 그룹의 환자는 intravascular imaging을 받을 수 없기 때문에 스텐트 최적화를 정량적인 coronary angiography를 통해 평가함
+
+-   동아시안 환자들에 한해서만 연구가 진행됨
+:::
