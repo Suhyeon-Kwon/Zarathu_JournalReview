@@ -113,9 +113,9 @@ z = 0.90
 
 ### Statistical analysis
 
-1.  Cox proportional-hazards model: 실험 장소와 당뇨병 유무에 따라 primary outcome 발생률 분석
+1.  **Cox proportional-hazards model**: 실험 장소와 당뇨병 유무에 따라 primary outcome 발생률 분석
     -   proportional-hazards model의 가정은 scaled된 Schoenfeld residuals 양측 검정으로 평가
-2.  Kaplan-Meier: 첫 사건이 발생하기까지의 시간 분석
+2.  **Kaplan-Meier**: 첫 사건이 발생하기까지의 시간 분석
 3.  모든 결과는 intention-to-treat&per-protocol / per-patient&per-vessel에 따라 분석
 4.  결측치나 부적절한 데이터는 제거
 :::

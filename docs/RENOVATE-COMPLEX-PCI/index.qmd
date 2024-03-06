@@ -83,12 +83,12 @@ editor: visual
 
 ## Statistical analysis
 
--   Cox proportional-hazards regression model
+-   **Cox proportional-hazards regression model**
 
     -   hazard ratios with 95% CI
     -   proportional-hazards model의 가정은 scaled된 Schoenfeld residuals 양측 검정으로 평가
 
--   Kaplan-Meier: time-to-event end point 분석
+-   **Kaplan-Meier**: time-to-event end point 분석
 
 -   primary end point의 Subgroup 분석은 intravascular imaging device 유형과 임상 요인에 따라 수행
 
