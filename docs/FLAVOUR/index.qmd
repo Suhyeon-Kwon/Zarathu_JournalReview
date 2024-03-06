@@ -1,7 +1,11 @@
 ---
 title: "FLAVOUR"
 author: "Suhyeon Kwon"
-format: revealjs
+format: 
+  revealjs:
+    footer: "Fractional Flow Reserve and Intravascular Ultrasound-Guided Intervention Strategy for Clinical Outcomes in Patients with Intermediate Stenosis"
+    smaller: true
+    scrollable: true
 editor: visual
 ---
 
@@ -39,7 +43,7 @@ editor: visual
 
 -   가정: 24개월 내 primary outcome의 발생률이 FFR 그룹에서 10%, IVUS 그룹에서 12%이다.
 
--   귀무가설(H0): FFR 그룹과 IVUS 그룹의 primary outcome 발생률이 2.5%(noninferiority margin)보다 차이난다. = FFR 그룹이 IVUS 그룹에 대해 열등하다.
+-   귀무가설(H0): FFR 그룹과 IVUS 그룹의 primary outcome 발생률 차이가 2.5%(noninferiority margin)이다. = FFR 그룹이 IVUS 그룹에 대해 열등하다.
 
 -   sample size: 1700
 
@@ -48,6 +52,8 @@ editor: visual
 -   type 1 error rate: 0.05 (5%)
 
 -   단측검정 + 95% 신뢰구간 이용
+
+-   **수식첨부**
 
 ## Statistical analysis
 
@@ -59,4 +65,76 @@ editor: visual
 
 # Results
 
+## Patients and follow-up
+
+-   총 1682명의 환자를 FFR 그룹(838명)과 IVUS 그룹(844명)으로 무작위 배정함
+
+-   환자들의 평균 나이는 65세이며, 554명의 환자(32.9%)가 당뇨병을 가지고 있음
+
+-   target vessel은 61.9%의 환자에서 좌전하행관상동맥이었으며, 두 그룹에서의 병변 길이, 기준 혈관의 직경, 표적 병변의 협착 직경은 유사함
+
+-   **테이블2 첨부**
+
+-   PCI를 받은 환자는 **IVUS 그룹(65.3%)**에서 FFR 그룹(44.4%)보다 더 많았음
+
+    -   전체 스텐트 개수와 길이는 두 그룹에서 유사함
+
+-   per-vessel 분석에서는, PCI의 빈도가 IVUS 그룹이 FFR 그룹보다 높았음
+
+-   테이블 S3 첨부
+
+-   환자 중 19명은 측정 실패, 44명은 프로토콜 위반
+
+```         
+-   11명: revascularization 기준을 만족하지 않는 병변에 PCI 수행
+
+-   28명: revascularization 기준을 만족했으나 PCI 연기
+
+-   5명: 약물 방출 스텐트를 사용하지 않고 PCI 수행
+```
+
+## Primary outcome
+
+-   99.2%의 환자들에 대해 추적 관찰 완료, 14명 실패
+
+-   연구 기간동안 primary outcome은 FFR 그룹에서 67명(8.1%), IVUS 그룹에서 71명(8.5%)에게 발생함
+
+    -   95% 단측 신뢰구간: 1.8%p
+
+    -   97.5% 단측 신뢰구간: 2.2%p
+
+    -   P=0.01
+
+-   테이블3 첨부
+
+-   Schoenfeld residuals 검증의 통계량이 유의하지 않으므로 proportional-hazards model의 가정은 위배되지 않음
+
+-   primary outcome 발생에 대한 hazard ratio는 0.96
+
+    -   95% 단측 신뢰구간: 1.27
+
+    -   97.5% 단측 신뢰구간: 1.35
+
+## Secondary and other outcomes
+
+-   secondary outcomes의 발생은 두 그룹에서 유사하며, 당뇨병 유무와 intention-to-treat&per-protocol 분석에서도 유사함
+
+-   52.9%의 환자에서 PCI가 성공했으며, FFR 그룹(50.1%)과 IVUS 그룹(54.8%)에서도 유사한 수치를 보임
+
 # Discussion
+
+## Conclusion 
+
+-   primary outcome 측면에서 FFR이 IVUS에 대해 비열등함
+
+    -   IVUS 그룹보다 FFR 그룹에서 target-vessel PCI가 더 적게 수행되었고, 이는 더 적은 스텐트 배치와 더 적은 이중 항혈소판제 투여로 이어질 수 있음
+
+## Limits 
+
+-   low-risk 환자를 대상으로 실험을 진행하여 high-risk 환자들에 적용이 어려움
+
+-   수술 의사들은 지정된 그룹에 대해 알고 있었음
+
+-   revascularization 빈도는 PCI 기준에 따라 다름
+
+-   아시아인에 한해 연구가 진행됨
