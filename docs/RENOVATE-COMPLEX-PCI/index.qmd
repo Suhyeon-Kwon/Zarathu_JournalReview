@@ -1,5 +1,5 @@
 ---
-title: "RENOVATE-COMPLEX-PCI"
+title: "Intravascular Imaging–Guided or Angiography-Guided Complex PCI"
 author: "Suhyeon Kwon"
 format: 
   revealjs:
@@ -22,7 +22,7 @@ editor: visual
 
 -   **optical coherence tomography(OCT)**: 광원을 이용하여 조직의 구조 단면 이미지를 제공하는 의료 영상 기술
 
-## Overview
+## Overview {.smaller}
 
 -   복잡한 관상동맥 병변을 가진 환자들은 그렇지 않은 환자보다 PCI 시행시 더 안좋은 임상 결과를 보임
 
@@ -30,11 +30,12 @@ editor: visual
 
 -   angiography-guided PCI보다 intravascular imaging-guided PCI의 임상 결과가 더 좋다는 연구가 존재하지만 표본 크기 제한 등의 문제로 추가 연구가 필요함
 
--   따라서 IVUS/OCT를 이용한 intravascular imaging-guided PCI가 angiography-guided PCI보다 복잡한 관상동맥 병변 환자의 임상 결과를 개선하는지 조사하고자 본 연구를 시행함
+-   따라서 **IVUS/OCT를 이용한 intravascular imaging-guided PCI가 angiography-guided PCI보다 복잡한 관상동맥 병변 환자의 임상 결과를 개선하는지 조사**하고자 본 연구를 시행함
 
-# Methods
+## Methods {.smaller}
 
-## Population and Randomization
+::: panel-tabset
+### population and randomization
 
 -   한국의 20개 기관에서 실시됨
 
@@ -46,20 +47,40 @@ editor: visual
 
 -   안정형 허혈성 심장질환/급성 관상동맥 증후군 여부와 참여 기관에 따라 층화추출함
 
-## Trial end points
-
--   primary end point: 사망, 표적 혈관 관련 심근경색, 표적 혈관 재혈관화 수술
-
--   secondary end point: 스텐트 혈전증 등
-
-## Sample size
+### sample size
 
 -   가정: 연간 primary end point 발생률은 intravascular imaging-guided PCI 그룹에서 3.6%, angiography-guided PCI 그룹에서 6%이다.
+
 -   귀무가설(H0): 두 그룹에서 primary end point 발생률의 차이가 없다.
+
 -   sample size: 1620
+
 -   검정력(power): 0.9 (90%)
+
 -   two sided significant level: 0.05 (5%)
+
+-   withdrawal: 0.05 (5%)
+
 -   log-rank test 이용함
+:::
+
+## Methods {.smaller}
+
+::: panel-tabset
+### Trial end points
+
+-   **primary end point**
+
+    -   death from cardiac causes (심장병에 의한 사망)
+
+    -   target-vessel--related myocardial infarction (표적 혈관 관련 심근 경색)
+
+    -   clinically driven target-vessel revascularization (표적 혈관 관련 혈관재형성)
+
+-   **secondary end point**
+
+    -   스텐트 혈전증 등
+:::
 
 ## Statistical analysis
 
@@ -71,7 +92,7 @@ editor: visual
 
 -   Intention-to-treat(ITT, 치료의도)
 
-## Discussion
+## Discussion {.smaller}
 
 ::: panel-tabset
 ### Conclusion

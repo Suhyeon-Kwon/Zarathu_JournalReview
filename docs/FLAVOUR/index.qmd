@@ -1,15 +1,28 @@
 ---
-title: "FLAVOUR"
+title: "Fractional Flow Reserve or Intravascular Ultrasonography to Guide PCI"
 author: "Suhyeon Kwon"
 format: 
   revealjs:
-    footer: "FFR vs IVUS"
-    smaller: true
+    footer: "FLAVOUR"
     scrollable: true
     transition: slide
     slide-number: true
 editor: visual
 ---
+
+## Glossary
+
+-   **coronary artery**: 관상동맥, 심장에 혈액을 공급하는 동맥
+
+-   **coronary artery disease(CAD)**: 관상동맥 질환, 관상동맥이라는 심장혈관에 동맥경화증이 진행되면서 혈관이 막힘으로써 심장이 운동하거나 일을 해야할 때 충분한 혈류 공급이 이뤄지지 않아 심장 근육에 상대적인 빈혈이 생기는 경우
+
+-   **percutaneous coronary intervention(PCI)**: 경피적 관상동맥 중재술, 막힌 관상동액의 협착 부위를 넓혀주는 시술
+
+-   **coronary angiography**: 관상동맥 조영술, 관상동맥을 x선을 이용해서 촬영하는 진단 방법
+
+-   **fractional flow reserve(FFR)**: 동맥협착이 있는 부분에서 혈액의 흐름 정도를 측정하여 심장혈관의 협착 정도를 평가하는 방법
+
+-   **intravascular ultrasonography(IVUS)**: 혈관 내 초음파 촬영
 
 ## Overview
 
@@ -21,9 +34,10 @@ editor: visual
 
 -   FFR이 더 적은 스텐트 배치와 더 적은 의료 자원의 소비로 이어질 것으로 예상된다는 점을 고려할 때, FFR의 비열등성을 증명하는 본 연구는 정당화될 수 있음
 
-# Methods
+## Methods {.smaller}
 
-## Population and Randomization
+::: panel-tabset
+### population and randomization
 
 -   한국과 중국의 18개 기관에서 수행됨
 
@@ -35,13 +49,7 @@ editor: visual
 
 -   실험 기관과 당뇨병 유무에 따라 층화 추출함
 
-## Outcomes and Definitions
-
--   primary outcome: 사망, 심근경색, 연구 기간 동안 혈관재형성(revascularization)
-
--   key secondary outcome: 환자별, 혈관별로 배치된 스텐트 개수, 뇌졸중 등
-
-## Sample size
+### sample size
 
 -   가정: 24개월 내 primary outcome의 발생률이 FFR 그룹에서 10%, IVUS 그룹에서 12%이다.
 
@@ -55,7 +63,38 @@ editor: visual
 
 -   단측검정 + 95% 신뢰구간 이용
 
--   **수식첨부**
+### sample size formula
+
+$$ n_A=\kappa n_B \;\text{ and }\; n_B=\left(\frac{p_A(1-p_A)}{\kappa}+p_B(1-p_B)\right) \left(\frac{z_{1-\alpha}+z_{1-\beta}}{p_A-p_B-\delta}\right)^2$$ $$1-\beta= \Phi\left(z-z_{1-\alpha/2}\right)+\Phi\left(-z-z_{1-\alpha/2}\right) \quad ,\quad z=\frac{p_A-p_B-\delta}{\sqrt{\frac{p_A(1-p_A)}{n_A}+\frac{p_B(1-p_B)}{n_B}}}$$ where
+
+$\kappa=n_A/n_B$ is the matching ratio\
+$\Phi$ is the standard Normal distribution function\
+$\Phi^{-1}$ is the standard Normal quantile function\
+$\alpha$ is Type I error\
+$\beta$ is Type II error, meaning $1-\beta$ is power\
+$\delta$ is the testing margin
+
+### sample size code
+
+``` R
+pA=0.10
+pB=0.12
+delta=0.025
+kappa=1
+alpha=0.05
+beta=0.10
+(nB=(pA*(1-pA)/kappa+pB*(1-pB))*((qnorm(1-alpha)+qnorm(1-beta))/(pA-pB-delta))^2)
+ceiling(nB) 
+z=(pA-pB-delta)/sqrt(pA*(1-pA)/nB/kappa+pB*(1-pB)/nB)
+(Power=pnorm(z-qnorm(1-alpha))+pnorm(-z-qnorm(1-alpha)))
+```
+:::
+
+## Outcomes and Definitions
+
+-   primary outcome: 사망, 심근경색, 연구 기간 동안 혈관재형성(revascularization)
+
+-   key secondary outcome: 환자별, 혈관별로 배치된 스텐트 개수, 뇌졸중 등
 
 ## Statistical analysis
 
