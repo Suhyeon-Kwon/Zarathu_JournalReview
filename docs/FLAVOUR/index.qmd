@@ -37,7 +37,7 @@ editor: visual
 ## Methods {.smaller}
 
 ::: panel-tabset
-### population and randomization
+### Population and randomization
 
 -   한국과 중국의 18개 기관에서 수행됨
 
@@ -49,7 +49,7 @@ editor: visual
 
 -   실험 기관과 당뇨병 유무에 따라 층화 추출함
 
-### sample size
+### Sample size
 
 -   가정: 24개월 내 primary outcome의 발생률이 FFR 그룹에서 10%, IVUS 그룹에서 12%이다.
 
@@ -63,7 +63,7 @@ editor: visual
 
 -   단측검정 + 95% 신뢰구간 이용
 
-### formula
+### Formula
 
 $$ n_A=\kappa n_B \;\text{ and }\; n_B=\left(\frac{p_A(1-p_A)}{\kappa}+p_B(1-p_B)\right) \left(\frac{z_{1-\alpha}+z_{1-\beta}}{p_A-p_B-\delta}\right)^2$$ $$1-\beta= \Phi\left(z-z_{1-\alpha/2}\right)+\Phi\left(-z-z_{1-\alpha/2}\right) \quad ,\quad z=\frac{p_A-p_B-\delta}{\sqrt{\frac{p_A(1-p_A)}{n_A}+\frac{p_B(1-p_B)}{n_B}}}$$ where
 
@@ -74,7 +74,7 @@ $\alpha$ is Type I error\
 $\beta$ is Type II error, meaning $1-\beta$ is power\
 $\delta$ is the testing margin
 
-### code
+### Code
 
 ``` r
 pA=0.10
