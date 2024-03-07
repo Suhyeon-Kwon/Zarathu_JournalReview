@@ -82,7 +82,7 @@ editor: visual
 
     -   스텐트 혈전증 등
 
-## Statistical analysis
+### Statistical analysis
 
 -   **Cox proportional-hazards regression model**
 
