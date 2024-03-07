@@ -188,7 +188,7 @@ editor: visual
 
 -   추적 기간 동안 복잡한 관상동맥 병변에 대하여 intravascular imaging-guided PCI가 angiography-guided PCI보다 primary end point 발생률이 더 낮았음
 
--   절차와 관련된 안전 사전의 발생률은 두 그룹에서 차이가 없었음
+-   절차와 관련된 안전 사건의 발생률은 두 그룹에서 차이가 없었음
 
 -   이전 연구에서보다 더 큰 표본과 더 긴 추적기간을 가졌으며, 복잡한 관상동맥 병변을 가진 환자만을 대상으로 했다는 점에서 의의가 있음
 
