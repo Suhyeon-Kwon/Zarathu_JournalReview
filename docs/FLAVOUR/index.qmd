@@ -91,7 +91,7 @@ z=(pA-pB-delta)/sqrt(pA*(1-pA)/nB/kappa+pB*(1-pB)/nB)
 
 nB = 828
 
-z = 0.90
+power = 0.90
 :::
 
 ## Methods {.smaller}
