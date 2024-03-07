@@ -64,7 +64,6 @@ editor: visual
 -   log-rank test 이용함
 :::
 
-
 ## Methods {.smaller}
 
 ::: panel-tabset
